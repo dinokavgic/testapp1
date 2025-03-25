@@ -1,36 +1,23 @@
 <template>
-  <div class="home-container">
-    <header>
-      <h1>Welcome to Our Coffee Shop</h1>
-      <p>Freshly brewed coffee made just for you</p>
-    </header>
-
-    <section class="intro">
-      <h2>Why Choose Us?</h2>
-      <ul>
-        <li>Fresh Beans</li>
-        <li>Expert Baristas</li>
-        <li>Cozy Atmosphere</li>
-      </ul>
-    </section>
-
-    <section class="testimonials">
-      <h2>Customer Testimonials</h2>
-      <p>"The best coffee I've ever had!" - Sarah</p>
-      <p>"Great ambiance and coffee!" - John</p>
-    </section>
-
-    <footer>
-      <p>&copy; 2025 Coffee Shop</p>
-      <router-link to="/login">Login</router-link> | 
-      <router-link to="/registracija">Registracija</router-link>
-    </footer>
+  <div class="row">
+  <div class="col-1"></div>
+  <div class="col-7">
+    <instagram-card/>
+    <instagram-card/>
+    <instagram-card/>
+    <instagram-card/>
   </div>
-</template>
+  <div class="col-3">
+  ... ovdje ide desni stupac!
+  </div>
+  </div>
+ </template>
 
 <script>
+import InstagramCard from '@/components/InstagramCard.vue';
 export default {
   name: 'HomeView',
+  components:{InstagramCard } ,
 };
 </script>
 

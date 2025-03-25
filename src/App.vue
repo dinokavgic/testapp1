@@ -1,6 +1,6 @@
 <template>
     <div id = "app">  
-<nav id = "nav" class="navbar navbar-expand-lg navbar-light bg-light">
+<nav id = "nav" class="navbar navbar-expand-lg navbar-light ">
      <a class="navbar-brand" href="#">
        <img src="@/assets/logo1.jpg" alt="Bootstrap" width="30" height="24">
     
@@ -46,6 +46,7 @@
  
  nav {
    padding: 30px;
+   background-color: white !important;
  
    a {
      font-weight: bold;
